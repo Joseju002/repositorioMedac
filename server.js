@@ -7,7 +7,7 @@ var session = require('express-session');
 const privateKey = fs.readFileSync('miclave.key', 'utf-8');
 const certificate = fs.readFileSync('micertificado.pem', 'utf-8');
 var credentials = { key: privateKey, cert: certificate, passphrase: '123456'};
-var https = require('https');
+//var https = require('https');
 
 //Para usar la base de datos en este fichero
 const mongoose = require('mongoose');
@@ -15,8 +15,8 @@ const {usuario, conectarDB} = require('./conexionBBDD.js');
 
 //var cookieParser = require('cookie-parser');
 const app = express();
-var server = https.createServer(credentials, app);
-//var server = require('http').Server(app);
+//var server = https.createServer(credentials, app);
+var server = require('http').Server(app);
 
 
 //Librerías
