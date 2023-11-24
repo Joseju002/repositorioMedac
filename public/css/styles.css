@@ -1,0 +1,27 @@
+body {
+    background-image: linear-gradient(to right, rgb(4, 0, 255), rgb(0, 195, 255));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    font-size: 400%;
+    text-shadow: 3px 3px black;
+}
+
+h2 {
+    text-shadow: 3px 3px black;
+}
+
+table, th, td {
+    border: 1px solid;
+    padding: 5px
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
