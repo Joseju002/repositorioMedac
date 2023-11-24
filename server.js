@@ -11,7 +11,7 @@ var https = require('https');
 
 //Para usar la base de datos en este fichero
 const mongoose = require('mongoose');
-const {usuario, conectarDB} = require('./conexionBBDD.JS');
+const {usuario, conectarDB} = require('./conexionBBDD.js');
 
 //var cookieParser = require('cookie-parser');
 const app = express();
